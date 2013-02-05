@@ -1,0 +1,167 @@
+
+
+      /* Sticky footer styles
+      -------------------------------------------------- */
+
+      html,
+      body {
+        height: 100%;
+        background-attachment: fixed;
+    background-color: #E5E5E5;
+    background-image: url("/static/img/background.png/"), -moz-linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2));
+    background-image: url("/static/img/background.png/"), -webkit-linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2));
+
+    font-family: 'Open Sans', sans-serif;
+        /* The html and body elements cannot have any padding or margin. */
+      }
+
+      /* Wrapper for page content to push down footer */
+      #wrap {
+        min-height: 100%;
+        height: auto !important;
+        height: 100%;
+        /* Negative indent footer by it's height */
+        margin: 0 auto -60px;
+      }
+
+      /* Set the fixed height of the footer here */
+      #push,
+      #footer {
+        height: 60px;
+      }
+      #footer {
+        background-color: #f5f5f5;
+      }
+
+      /* Lastly, apply responsive CSS fixes as necessary */
+      @media (max-width: 767px) {
+        #footer {
+          margin-left: -20px;
+          margin-right: -20px;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+      }
+
+
+
+      /* Custom page CSS
+      -------------------------------------------------- */
+      /* Not required for template or sticky footer method. */
+
+      .container {
+        width: auto;
+        max-width: 680px;
+      }
+      .container .credit {
+        margin: 20px 0;
+      }
+
+.lead {
+    font-size: 16px !important;
+}
+
+.page-header {
+    margin: 20px 0 0;
+    border-bottom: none;
+}
+
+.page-header h1 a {
+    text-decoration: none;
+    color: #333333;
+    -webkit-transition: color .5s;
+    -moz-transition: color .5s;
+    -o-transition: color .5s;
+    transition: color .5s;
+}
+
+.page-header h1 a:hover {
+    color: #0CAEE3 !important;
+    cursor: pointer;
+}
+
+a.dropdown-toggle {
+    color: #333333 !important;
+}
+a.dropdown-toggle b.caret {
+    border-top-color: #333333 !important;
+}
+
+div.news-area h4.title {
+    font-size: 14px;
+    font-weight: normal;
+    clear: both;
+}
+
+div.news-area h4.header {
+    border-bottom: 1px solid #BBBBBB;
+    padding-bottom: 10px;
+}
+
+div.news-area h4.title a {
+    color: #333333;
+}
+
+div.news-area h4.title a:hover {
+    text-decoration: none;
+    border-bottom: 1px dotted #B6B6B6;
+}
+
+div.news-area p.timestamp {
+    font-size: 0.85em;
+    float: right;
+    margin: -2.8em -0.1em 0 0;
+}
+
+div.news-area p.entry {
+    display: none;
+    text-align: justify;
+}
+
+.news-list a.title {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.dropdown-menu li > a:hover,
+.dropdown-menu li > a:focus,
+.dropdown-submenu:hover > a {
+    background-color: #999999;
+    background-image: none;
+}
+
+.news-detail .title {
+    border-bottom: 1px solid #BBBBBB;
+    padding-bottom: 10px;
+}
+
+.news-detail p.entry {
+    text-align: justify;
+}
+
+.news-detail .timestamp {
+    font-size: 0.85em;
+    float: right;
+    margin: -2.8em -0.1em 0 0;
+    font-style: italic;
+}
+
+.page-detail div.entry {
+    text-align: justify;
+}
+
+.page-detail h4.title {
+    border-bottom: 1px solid #BBBBBB;
+    padding-bottom: 10px;
+}
+
+.hadron-nav {
+    margin-left: -10px;
+}
+
+#hadron-logo {
+    float: right;
+    height: auto;
+    margin-top: -44px;
+    width: 25%;
+}

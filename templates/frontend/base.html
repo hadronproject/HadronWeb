@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Hadron Project, by geeks for geeks</title>
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <meta name="description" content="An extemely flexible and modern source-based GNU/Linux distribution with Python">
+        <meta name="author" content="Hadron Developers">
+        <meta name="robots" content="index, follow"/>
+        <meta name="keywords" content="Linux distro, Linux distribution, x86_84, source-based, compiling, GNU, Linux, GNU/Linux, lpms, Hadron, Python, package management, power users" />
+
+        <!-- OpenSans font from Google -->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600' rel='stylesheet' type='text/css'>
+
+        <!-- Le styles -->
+        <link href="/static/css/bootstrap.css" rel="stylesheet">
+        <link href="/static/css/base.css" rel="stylesheet">
+        <link href="/static/css/bootstrap-responsive.css" rel="stylesheet">
+
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+        <link rel="shortcut icon" href="/static/img/favicon.ico">
+        <script src="/static/js/jquery-1.9.0.min.js" type="text/javascript"></script>
+        <script src="/static/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="/static/js/main.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <!-- Part 1: Wrap all page content here -->
+        <div id="wrap">
+            <!-- Begin page content -->
+            <div class="container">
+                <div class="page-header">
+                    <h1><a href="/">Hadron Project</a></h1>
+                    <img id="hadron-logo" src="/static/img/hadron-logo.png"></img>
+                </div>
+                {% block lead %}{% endblock %}
+                <ul class="nav nav-pills hadron-nav">
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" role="button" id="drop4" class="dropdown-toggle">Introduction <b class="caret"></b></a>
+                        <ul aria-labelledby="drop4" role="menu" class="dropdown-menu" id="menu1">
+                            <li><a href="/page/about" tabindex="-1">About</a></li>
+                            <li><a href="#" tabindex="-1">Questions and Answers</a></li>
+                            <li><a href="#" tabindex="-1">Project Goal</a></li>
+                            <li><a href="#" tabindex="-1">Package Manager</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" role="button" id="drop5" class="dropdown-toggle">Downloads <b class="caret"></b></a>
+                        <ul aria-labelledby="drop5" role="menu" class="dropdown-menu" id="menu2">
+                            <li><a href="#" tabindex="-1">Get Hadron</a></li>
+                            <li><a href="#" tabindex="-1">Get Sources</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" role="button" id="drop5" class="dropdown-toggle">Documentation <b class="caret"></b></a>
+                        <ul aria-labelledby="drop5" role="menu" class="dropdown-menu" id="menu3">
+                            <li><a href="#" tabindex="-1">Installation Guide</a></li>
+                            <li><a href="#" tabindex="-1">Packaging with lpms</a></li>
+                            <li><a href="#" tabindex="-1">Other Documents</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" role="button" id="drop5" class="dropdown-toggle">Support <b class="caret"></b></a>
+                        <ul aria-labelledby="drop5" role="menu" class="dropdown-menu" id="menu3">
+                            <li><a href="#" tabindex="-1">Bug Tracker</a></li>
+                            <li><a href="#" tabindex="-1">Become a developer</a></li>
+                            <li><a href="#" tabindex="-1">IRC Channels</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" role="button" id="drop5" class="dropdown-toggle">Misc <b class="caret"></b></a>
+                        <ul aria-labelledby="drop5" role="menu" class="dropdown-menu" id="menu3">
+                            <li><a href="#" tabindex="-1">Developers</a></li>
+                            <li><a href="#" tabindex="-1">Packages</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                {% block content %}{% endblock %}
+            </div>
+            <div id="push"></div>
+        </div>
+        <div id="footer">
+            <div class="container">
+                <p class="muted credit">Hadron Developers &copy; 2011-2013 | This web site is powered by <a href="https://www.djangoproject.com/">Django</a></p>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,7 @@
+{% extends "frontend/base.html" %}
+{% block content %}
+<div class="page-detail">
+    <h4 class="title">{{ item.title }}</h4>
+    <div class="entry"> {{ item.entry_html|safe }} </div>
+</div>
+{% endblock %}

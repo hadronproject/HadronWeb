@@ -1,0 +1,23 @@
+{% extends "frontend/base.html" %}
+{% block content %}
+<div class="news-list">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Title</th>
+                <th>Published at</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in news_objects %}
+            <tr>
+                <td>{{ forloop.counter }}</td>
+                <td><a href="/news/{{ item.slug }}" class="title">{{ item.title }}</a></td>
+                <td><p class="timestamp">{{ item.created_at|date:"Y-m-d" }}</p></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

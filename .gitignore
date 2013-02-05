@@ -1,6 +1,7 @@
 settings.py
 collect_static
 *.db
+wsgi_workaround.py
 
 *.py[cod]
 

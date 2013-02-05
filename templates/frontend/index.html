@@ -4,20 +4,24 @@
 {% endblock %}
 {% block content %}
     <div class="news-area">
-        <h4 class="header">News</h4>
-        {% for news in news_objects %}
-            <div class="news-item">
-                <h4 class="title"><a  href="#"> {{ news.title }} </a></h4>
-                <p class="timestamp"> {{ news.created_at|date:"Y-m-d" }}</p>
-                <p class="entry well">
-                    {{ news.entry }}
-                    <br/><br/>
-                    <a href="/news/{{ news.slug }}">Show comments</a>
-                </p>
-            </div>
+        <h4 class="header">Latest News</h4>
+        {% if news_objects %}
+            {% for news in news_objects %}
+                <div class="news-item">
+                    <h4 class="title"><a  href="#"> {{ news.title }} </a></h4>
+                    <p class="timestamp"> {{ news.created_at|date:"Y-m-d" }}</p>
+                    <p class="entry well">
+                        {{ news.entry }}
+                        <br/><br/>
+                        <a href="/news/{{ news.slug }}">Show comments</a>
+                    </p>
+                </div>
             {% endfor %}
             {% if read_more %}
                 <a class="read-more" href="/news">Read more news</a>
             {% endif %}
+        {% else %}
+            <h5>No news found</h5>
+        {% endif %}
     </div>
 {% endblock %}

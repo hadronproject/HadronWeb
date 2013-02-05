@@ -86,7 +86,8 @@ div.news-area h4.title {
     clear: both;
 }
 
-div.news-area h4.header {
+div.news-area h4.header,
+div.news-list h4.header {
     border-bottom: 1px solid #BBBBBB;
     padding-bottom: 10px;
 }

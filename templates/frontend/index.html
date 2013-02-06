@@ -11,7 +11,7 @@
                     <h4 class="title"><a  href="#"> {{ news.title }} </a></h4>
                     <p class="timestamp"> {{ news.created_at|date:"Y-m-d" }}</p>
                     <p class="entry well">
-                        {{ news.entry }}
+                        {{ news.entry_html|safe }}
                         <br/><br/>
                         <a href="/news/{{ news.slug }}">Show comments</a>
                     </p>

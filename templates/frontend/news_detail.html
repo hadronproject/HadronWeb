@@ -3,7 +3,7 @@
     <div class="news-detail">
         <h4 class="title">{{ item.title }}</h4>
         <p class="timestamp">{{ item.created_at|date:"Y-m-d" }}</p>
-        <p class="entry"> {{ item.entry }} </p>
+        <p class="entry"> {{ item.entry_html|safe }} </p>
         <div id="disqus_thread"></div>
         <script type="text/javascript">
             /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */

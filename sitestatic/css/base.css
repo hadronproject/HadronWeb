@@ -112,7 +112,7 @@ div.news-area p.timestamp {
     margin: -2.8em -0.1em 0 0;
 }
 
-div.news-area p.entry {
+div.news-area div.entry {
     display: none;
     text-align: justify;
 }
@@ -134,7 +134,7 @@ div.news-area p.entry {
     padding-bottom: 10px;
 }
 
-.news-detail p.entry {
+.news-detail .entry {
     text-align: justify;
 }
 

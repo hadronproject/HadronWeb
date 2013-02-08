@@ -26,6 +26,18 @@
         <script src="/static/js/jquery-1.9.0.min.js" type="text/javascript"></script>
         <script src="/static/js/bootstrap.min.js" type="text/javascript"></script>
         <script src="/static/js/main.js" type="text/javascript"></script>
+        <!-- Google Analytics -->
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-2812062-3']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
     </head>
     <body>
         <!-- Part 1: Wrap all page content here -->
@@ -42,9 +54,8 @@
                         <a href="#" data-toggle="dropdown" role="button" id="drop4" class="dropdown-toggle">Introduction <b class="caret"></b></a>
                         <ul aria-labelledby="drop4" role="menu" class="dropdown-menu" id="menu1">
                             <li><a href="/page/about" tabindex="-1">About</a></li>
-                            <li><a href="#" tabindex="-1">Questions and Answers</a></li>
-                            <li><a href="#" tabindex="-1">Project Goal</a></li>
-                            <li><a href="#" tabindex="-1">Package Manager</a></li>
+                            <li><a href="/page/pros-and-cons" tabindex="-1">Pros and Cons</a></li>
+                            <li><a href="/page/package-manager" tabindex="-1">Package Manager</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
@@ -65,8 +76,8 @@
                     <li class="dropdown">
                         <a href="#" data-toggle="dropdown" role="button" id="drop5" class="dropdown-toggle">Support <b class="caret"></b></a>
                         <ul aria-labelledby="drop5" role="menu" class="dropdown-menu" id="menu3">
-                            <li><a href="#" tabindex="-1">Bug Tracker</a></li>
-                            <li><a href="#" tabindex="-1">Become a developer</a></li>
+                            <li><a href="https://github.com/hadronproject/main" tabindex="-1">Bug Tracker</a></li>
+                            <li><a href="/pages/become-a-developer" tabindex="-1">Become a developer</a></li>
                             <li><a href="#" tabindex="-1">IRC Channels</a></li>
                         </ul>
                     </li>
@@ -74,7 +85,7 @@
                         <a href="#" data-toggle="dropdown" role="button" id="drop5" class="dropdown-toggle">Misc <b class="caret"></b></a>
                         <ul aria-labelledby="drop5" role="menu" class="dropdown-menu" id="menu3">
                             <li><a href="#" tabindex="-1">Developers</a></li>
-                            <li><a href="#" tabindex="-1">Packages</a></li>
+                            <li><a href="/page/packages" tabindex="-1">Packages</a></li>
                         </ul>
                     </li>
                 </ul>

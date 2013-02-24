@@ -5,7 +5,6 @@ from apps.documents.models import Document
 
 def index(request):
     documents = Document.objects.values_list('title', 'slug')
-    print documents
     return render_to_response("documents/index.html", {'documents': documents})
 
 

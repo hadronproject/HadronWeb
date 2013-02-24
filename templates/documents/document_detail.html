@@ -1,0 +1,11 @@
+{% extends "documents/base.html" %}
+{% block title %}Hadron Project - {{ item.title }}{% endblock %}
+{% block content %}
+<div class="document-detail">
+    <h3 class="title">{{ item.title }} <a href="{% url apps.documents.views.index %}"><i class="icon-home"></i> Return to index</a></h3>
+    <div class="entry">{{ item.entry_html|safe }}</div>
+    <div class="about">
+        <div class="last-update"><strong>Last update:</strong> {{ item.updated_at }}</div>
+    </div>
+</div>
+{% endblock %}

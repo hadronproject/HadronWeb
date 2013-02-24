@@ -1,0 +1,16 @@
+{% extends "documents/base.html" %}
+{% block title %}Hadron Project - Documentation Index{% endblock %}
+{% block content %}
+<div class="document-index">
+    <h3 class="title">Documentation Index</h3>
+    <div class="welcome">
+        Welcome to HadronDocuments! Thanks for trying Hadron/lpms.
+    </div>
+    <br/>
+    <ul class="document-list">
+        {% for document in documents %}
+            <li><a href="{% url apps.documents.views.document_detail document.1 %}">{{ document.0 }}</a></li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}

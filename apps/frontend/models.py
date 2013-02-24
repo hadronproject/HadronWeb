@@ -12,6 +12,7 @@ class Page(models.Model):
     created_at = models.DateField(auto_now_add=True)
     updated_at = models.DateField(auto_now=True)
     slug = models.SlugField(blank=True)
+    published = models.NullBooleanField()
     user = models.ForeignKey(User)
 
     class Meta:
@@ -35,6 +36,7 @@ class News(models.Model):
     created_at = models.DateField(auto_now_add=True)
     last_modified = models.DateField(auto_now=True)
     slug = models.SlugField(blank=True)
+    published = models.NullBooleanField()
     user = models.ForeignKey(User)
 
     class Meta:
@@ -49,3 +51,25 @@ class News(models.Model):
             self.slug = slugify(self.title)
         self.entry_html = markdown(self.entry)
         super(News, self).save(*args, **kwargs)
+
+
+class Developer(models.Model):
+    name = models.CharField(max_length=128)
+    lastname = models.CharField(max_length=128)
+    alias = models.CharField(max_length=128)
+    occupation = models.CharField(max_length=512)
+    roles = models.CharField(max_length=512)
+    website = models.URLField(null=True)
+    interests = models.CharField(max_length=512)
+    published = models.NullBooleanField()
+
+    class Meta:
+        ordering = ['-id']
+
+    def __unicode__(self):
+        return self.name+"::"+self.alias
+
+
+class FrontendImage(models.Model):
+    developer = models.ForeignKey(Developer, related_name='images')
+    image = models.ImageField(upload_to="images")

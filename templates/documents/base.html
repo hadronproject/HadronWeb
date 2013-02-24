@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block container %}
+<div class="documents-header">
+    <h3><a href="{% url apps.frontend.views.index %}">Hadron Project</a> <small>Everything should be made as simple as possible, but not simpler.</small></h3>
+</div>
+<div class="container-narrow">
+    {% block content %}{% endblock %}
+    <!-- <ul class="breadcrumb">
+        <li><a href="#">Home</a> <span class="divider">/</span></li>
+        <li><a href="#">Library</a> <span class="divider">/</span></li>
+        <li class="active">Data</li>
+    </ul> -->
+</div>
+{% endblock %}

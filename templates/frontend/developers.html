@@ -1,0 +1,41 @@
+{% extends "frontend/homepage.html" %}
+{% block content %}
+<table class="developers">
+    <tbody>
+        {% for developer in developers %}
+        <tr>
+            <td class="pic">
+                <img src="/{{ developer.images.get.image.url }}">
+            </td>
+            <td>
+                <h3>{{ developer.name }} {{ developer.lastname }}</h3>
+                <table class="bio">
+                    <tbody>
+                        <tr>
+                            <th>Alias:</th>
+                            <td>{{ developer.alias }}</td>
+                        </tr>
+                        <tr>
+                            <th>Roles:</th>
+                            <td>{{ developer.roles }}<br></td>
+                        </tr>
+                        <tr>
+                            <th>Website:</th>
+                            <td><a href="{{ developer.website }}">{{ developer.website }}</a></td>
+                        </tr>
+                        <tr>
+                            <th>Occupation:</th>
+                            <td>{{ developer.occupation }}</td>
+                        </tr>
+                        <tr>
+                            <th>Interests:</th>
+                            <td>{{ developer.interests }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

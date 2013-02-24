@@ -23,6 +23,14 @@ body {
     height: 60px;
 }
 
+pre {
+    background-color: #333333;
+}
+
+pre code {
+    color: #FFFFFF;
+}
+
 #footer {
     background-color: #f5f5f5;
     /*margin-top: 20px;*/
@@ -42,9 +50,7 @@ body {
     }
 }
 
-/* Custom page CSS
--------------------------------------------------- */
-/* Not required for template or sticky footer method. */
+/* Frontend app */
 
 .container {
     width: auto;
@@ -163,4 +169,112 @@ div.news-area div.entry {
     height: auto;
     margin-top: -44px;
     width: 25%;
+}
+
+/* Document app */
+
+.documents-header h3 {
+    padding-left: 10px;
+}
+
+.documents-header {
+    height: 60px;
+    padding-top: 1px;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.documents-header small {
+    font-style: italic;
+    font-size: 12px;
+}
+
+.documents-header a {
+    color: #333333;
+    text-decoration: none;
+    -webkit-transition: color .5s;
+    -moz-transition: color .5s;
+    -o-transition: color .5s;
+    transition: color .5s;
+}
+
+.documents-header a:hover {
+    color: #0CAEE3 !important;
+    cursor: pointer;
+}
+
+.breadcrumb {
+    padding: 1px 5px;
+    font-size: 12px;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.container-narrow {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.document-index,
+.document-detail {
+    background-color: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+    padding: 19px 29px 29px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #e5e5e5;
+}
+
+.document-index .title,
+.document-detail .title {
+    border-bottom: 1px solid #BBBBBB;
+}
+
+.document-detail .title a {
+    float: right;
+    font-size: 12px;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.document-detail .about {
+    border-top: 1px solid #BBBBBB;
+}
+
+.document-detail .last-update {
+    margin-top: 5px;
+    color: #999999;
+}
+
+.document-detail h4 {
+    border-bottom: 1px dotted #BBBBBB;
+}
+
+/* Developers page */
+
+.developers th {
+    color: #666666;
+    font-weight: normal;
+    padding-right: 0.5em;
+    text-align: right;
+    vertical-align: top;
+    white-space: nowrap;
+}
+
+.developers td.pic {
+    padding-right: 15px;
+    padding-top: 2.25em;
+    vertical-align: top;
+}
+
+.developers td.pic img {
+    border: 1px solid #CCCCCC;
+    padding: 4px;
+    width: 125px;
+    height: 125px;
+}
+
+.developers td h3 {
+    border-bottom: 1px dotted #CCCCCC;
+    margin-bottom: 0.5em;
 }

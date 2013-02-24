@@ -1,4 +1,4 @@
-from apps.frontend.models import News, Page
+from apps.frontend.models import News, Page, Developer
 from django.shortcuts import render_to_response, get_object_or_404
 
 
@@ -26,3 +26,9 @@ def page_detail(request, slug):
     return render_to_response('frontend/page_detail.html', {
         'item': get_object_or_404(Page, slug=slug)
     })
+
+
+def developers(request):
+    return render_to_response('frontend/developers.html', {
+        'developers': Developer.objects.all(),
+        })

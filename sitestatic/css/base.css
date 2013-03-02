@@ -252,6 +252,11 @@ div.news-area div.entry {
 
 /* Developers page */
 
+.developers {
+  /* This is a temporary fix */
+  margin-bottom: 20px;
+}
+
 .developers th {
     color: #666666;
     font-weight: normal;
@@ -265,6 +270,8 @@ div.news-area div.entry {
     padding-right: 15px;
     padding-top: 2.25em;
     vertical-align: top;
+    /* Dont show developer pics now */
+    display: none;
 }
 
 .developers td.pic img {

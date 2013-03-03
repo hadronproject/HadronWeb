@@ -270,8 +270,6 @@ div.news-area div.entry {
     padding-right: 15px;
     padding-top: 2.25em;
     vertical-align: top;
-    /* Dont show developer pics now */
-    display: none;
 }
 
 .developers td.pic img {
